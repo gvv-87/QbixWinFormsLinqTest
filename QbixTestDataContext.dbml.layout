@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/QbixTestDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e3c7f5ca-093a-4299-a0ee-92fc482f3b97" absoluteBounds="3, 4.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QbixTestDataContext/Должности" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf50fcf0-dfbd-46e8-9c1a-206ae51cd96b" absoluteBounds="3.0149999999999997, 5.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a96fd9f6-3cb3-4596-953e-f8cabadc2f9e" absoluteBounds="0.5, 4.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/QbixTestDataContext/Должности_Навыки" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a86b561-3467-4c7c-94d9-4d7db30caa3b" absoluteBounds="0.51500000000000012, 5.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac61eca2-d328-4f37-ae06-215f9d4e6b24" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QbixTestDataContext/Сотрудники" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed24551c-7a1c-4ec5-86cd-11e5bbff3162" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ca0f3db-0c6f-41d8-aadf-076f05a023b5" absoluteBounds="0.5, 2.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/QbixTestDataContext/Сотрудники_Должн_Навыки" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16383638-c14a-4304-b2c9-6d3986da56d5" absoluteBounds="0.51499999999999968, 2.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c54242e-4977-42c5-a5e7-a8a1377effda" absoluteBounds="2.75, 2.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QbixTestDataContext/Сотрудники_Должности" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f07a8531-a3b7-4093-8cc2-dc9aca34db5b" absoluteBounds="2.765, 2.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 5.34699625651042); (2.5 : 5.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QbixTestDataContext/Должности/Должности_Должности_Навыки" />
+      <nodes>
+        <classShapeMoniker Id="e3c7f5ca-093a-4299-a0ee-92fc482f3b97" />
+        <classShapeMoniker Id="a96fd9f6-3cb3-4596-953e-f8cabadc2f9e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 4.625); (1.5 : 3.7612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QbixTestDataContext/Должности_Навыки/Должности_Навыки_Сотрудники_Должн_Навыки" />
+      <nodes>
+        <classShapeMoniker Id="a96fd9f6-3cb3-4596-953e-f8cabadc2f9e" />
+        <classShapeMoniker Id="0ca0f3db-0c6f-41d8-aadf-076f05a023b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.625 : 1.94399251302083); (1.625 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QbixTestDataContext/Сотрудники/Сотрудники_Сотрудники_Должн_Навыки" />
+      <nodes>
+        <classShapeMoniker Id="ac61eca2-d328-4f37-ae06-215f9d4e6b24" />
+        <classShapeMoniker Id="0ca0f3db-0c6f-41d8-aadf-076f05a023b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.875 : 4.75); (3.875 : 3.56899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QbixTestDataContext/Должности/Должности_Сотрудники_Должности" />
+      <nodes>
+        <classShapeMoniker Id="e3c7f5ca-093a-4299-a0ee-92fc482f3b97" />
+        <classShapeMoniker Id="8c54242e-4977-42c5-a5e7-a8a1377effda" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.218752 : 1.94399251302083); (2.218752 : 2.135); (3.75 : 2.135); (3.75 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QbixTestDataContext/Сотрудники/Сотрудники_Сотрудники_Должности" />
+      <nodes>
+        <classShapeMoniker Id="ac61eca2-d328-4f37-ae06-215f9d4e6b24" />
+        <classShapeMoniker Id="8c54242e-4977-42c5-a5e7-a8a1377effda" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
