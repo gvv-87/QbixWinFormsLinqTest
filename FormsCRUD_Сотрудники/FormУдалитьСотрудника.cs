@@ -7,21 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QbixWinFormsLinqTest
+namespace QbixPasswordsReturn
 {
     public partial class FormУдалитьСотрудника : Form
     {
-        Сотрудники Сотрудники_;
-        public FormУдалитьСотрудника(Сотрудники Сотрудники_)
+        User Сотрудники_;
+        public FormУдалитьСотрудника(User Сотрудники_)
         {
             InitializeComponent();
             this.Сотрудники_ = Сотрудники_;
-            this.textBox_ТекущееФио.Text = Сотрудники_.Сотрудник_Фио;
+            this.textBox_ТекущееФио.Text = Сотрудники_.FullName;
         }
 
         private void button_Сохранить_Click(object sender, EventArgs e)
         {
-            Accessor.СотрудникDelete(Сотрудники_.Сотрудник_Id);
+            Accessor.СотрудникDelete(Сотрудники_.ID);
             DialogResult = DialogResult.OK;
             this.Close();
 

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QbixWinFormsLinqTest
+namespace QbixPasswordsReturn
 {
     public partial class FormMain : Form
     {
@@ -20,7 +20,7 @@ namespace QbixWinFormsLinqTest
         {
             try
             { 
-                System.Data.Linq.Table<Сотрудники> emp = Accessor.GetTable_Сотрудники();
+                System.Data.Linq.Table<User> emp = Accessor.GetTable_Users();
                 dataGridView_Сотрудники.DataSource = emp;
             }
             catch(Exception ex_) { MessageBox.Show(ex_.Message); this.Close();}

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.75" name="DataClasses1">
+  <DataContextMoniker Name="/QbixTestDataContext" />
+  <nestedChildShapes>
+    <classShape Id="86d144e0-bd7e-41eb-9452-cc68ec9c30d3" absoluteBounds="4.625, 4.625, 2, 4.8477197265625">
+      <DataClassMoniker Name="/QbixTestDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="234f784c-46c3-4169-99a2-72ad1125383b" absoluteBounds="4.64, 5.085, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

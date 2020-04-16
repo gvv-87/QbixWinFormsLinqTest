@@ -1,4 +1,4 @@
-﻿namespace QbixWinFormsLinqTest
+﻿namespace QbixPasswordsReturn
 {
     partial class FormУдалитьСотрудника
     {

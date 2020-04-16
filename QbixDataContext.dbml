@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DMS_RGS_RF_TEST" Class="QbixTestDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PAPA\SQLSERVER__2017;Initial Catalog=DMS_RGS_RF_TEST;Integrated Security=True" SettingsObjectName="QbixPasswordsReturn.Properties.Settings" SettingsPropertyName="DMS_RGS_RF_TESTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="VarChar(36)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ID_Occup" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UseTimingCounters" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ts" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="FailedAuth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PWStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsChanged" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="VarChar(152)" IsDbGenerated="true" CanBeNull="true" />
+      <Column Name="ID_Branch" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LPULetterLiter" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WorkingHours" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
